@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  kodexplorer:
+    image: area39/kodexplorer
+    restart: "always"
+    ports:
+      - "8088:80"
+    volumes:
+      - "./html:/var/www/html"
